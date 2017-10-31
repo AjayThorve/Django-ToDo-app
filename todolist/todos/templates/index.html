@@ -1,0 +1,9 @@
+{% include 'partials/header.html' %}
+        <ul>
+            {% for t in todo %}
+            <li><a href="/todos/details/{{t.id}}">{{t.title}}</a> : {{t.text}}</li>
+            {% endfor %}
+        </ul>
+
+<a href="/todos/add">Add To do item</a>
+{% include 'partials/footer.html' %}
